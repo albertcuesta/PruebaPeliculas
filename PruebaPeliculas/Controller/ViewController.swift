@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.deselectRow(at: indexPath, animated: true)
         let vc = DetalleTablaView()
         let movie = viewModel.cellForRowAt(indexPath: indexPath)
-        vc.setWithValuesOf(movie)
+        //vc.setWithValuesOf(movie)
         self.navigationController?.pushViewController(vc, animated: true)
     }
 }
